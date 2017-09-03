@@ -7,8 +7,8 @@ driver.get('https://www.instagram.com/?hl=ja')    #インスタを開く
 time.sleep(1)                                           #ページを開くまで時間がかかるので取り敢えず１秒停止
 driver.find_element_by_xpath('//*[@id="react-root"]/section/main/article/div[2]/div[1]/div/form/span/button').click()  #ログインボタンをxpathで指定
 time.sleep(1)                                           #ページを開くまで時間がかかるので取り敢えず１秒停止
-driver.find_element_by_xpath('//*[@id="email"]').send_keys('migratory221@gmail.com')  #メールアドレス
-driver.find_element_by_xpath('//*[@id="pass"]').send_keys('1515717')  #メールアドレス
+driver.find_element_by_xpath('//*[@id="email"]').send_keys('')  #メールアドレス
+driver.find_element_by_xpath('//*[@id="pass"]').send_keys('')  #メールアドレス
 driver.find_element_by_xpath('//*[@id="loginbutton"]').click()  #ログインボタンをxpathで指定
 
 time.sleep(6)                                           #ページを開くまで時間がかかるので取り敢えず6秒停止
