@@ -14,13 +14,13 @@ time.sleep(1)                                           #ページを開くま�
 
 time.sleep(30)                                           #ページを開くまで時間がかかるので取り敢えず6秒停止
 
-for i in range(1,1000):
+for i in range(1,100000):
   driver.get('https://www.instagram.com/')  #個別のページを開く
   time.sleep(1)                                           #ページを開くまで時間がかかるので取り敢えず１秒停止
   try:
     driver.find_element_by_xpath('//*[@id="mainFeed"]/div/div/div[1]/div/article[1]/div[2]/section[1]/a[1]/span').click()  #like
 #    time.sleep(3600*1)
-    time.sleep(60*2)
+    time.sleep(60*0.5)
   except KeyboardInterrupt  :
     print ( "KeyboardInterrupt\n" )
     driver.quit()
